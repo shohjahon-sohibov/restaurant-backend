@@ -13,7 +13,6 @@ module.exports = gql`
 
     extend type Mutation {
         newBranch(name: String! restaurantId: ID!):Branches!
-        updateBranch(name: String! id: ID!):String!
     }
 
 `
