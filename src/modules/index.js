@@ -3,7 +3,6 @@ const Restaurants = require('./restaurants')
 const Branches = require('./branches')
 const Menu = require('./menu')
 const Orders = require('./orders')
-const temporaryOrders = require('./temporaryOrders')
 
 module.exports = [
     Categories,
@@ -11,5 +10,4 @@ module.exports = [
     Branches,
     Menu,
     Orders,
-    temporaryOrders
 ]

@@ -69,28 +69,7 @@ const Orders = sequelize.define('order', {
         allowNull: false
     }
   });
-
-  const temporaryOrders = sequelize.define('temporary_order', {
-    name: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-        validate: {
-            min: 3
-        }
-    },
-    price: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        validate: {
-            min: 1000
-        }
-    },
-    branchId: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    }
-  });
-
+  
 Categories.hasMany(Restaurants)
 Restaurants.belongsTo(Categories)
 
