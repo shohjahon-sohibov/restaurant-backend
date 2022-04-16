@@ -8,6 +8,9 @@ module.exports = {
                     restaurantId
                 }
             })
+        },
+        getAllBranches: async() => {
+            return await Branches.findAll()
         }
     },
     Mutation: {

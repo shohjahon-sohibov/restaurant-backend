@@ -8,6 +8,7 @@ module.exports = gql`
 
     extend type Query {
         getBranches(restaurantId: ID!): [Branches!]!
+        getAllBranches: [Branches!]!
     }
 
     extend type Mutation {
