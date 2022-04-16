@@ -97,6 +97,7 @@ Restaurants.belongsTo(Categories)
 Restaurants.hasMany(Branches)
 Branches.belongsTo(Restaurants)
 
+
 Branches.hasMany(Menu)
 Menu.belongsTo(Branches)
 
