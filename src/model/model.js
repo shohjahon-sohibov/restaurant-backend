@@ -69,7 +69,7 @@ const Orders = sequelize.define('order', {
         allowNull: false
     }
   });
-  
+
 Categories.hasMany(Restaurants)
 Restaurants.belongsTo(Categories)
 
@@ -88,6 +88,5 @@ module.exports = {
     Restaurants,
     Branches,
     Menu,
-    Orders,
-    temporaryOrders
+    Orders
 }
