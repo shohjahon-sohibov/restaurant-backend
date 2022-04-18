@@ -1,9 +1,9 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
-const user = 'postgres'
-const host = 'localhost'
-const database = 'base'
-const password = 1
+const user = 'gxvcqikc'
+const host = '	rajje.db.elephantsql.com (rajje-01)'
+const database = 'gxvcqikc'
+const password = 'aPzRK6bOFfc8S2w1xQ5htGZTs5nvu4Sa'
 const port = 5432
 
 const sequelize = new Sequelize(database, user, password, {
