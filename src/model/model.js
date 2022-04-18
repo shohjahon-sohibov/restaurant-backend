@@ -1,4 +1,17 @@
-const { sequelize, DataTypes } = require('../lib/sequlize')
+const { Sequelize, DataTypes } = require('sequelize')
+
+const user = 'postgres'
+const host = 'localhost'
+const database = 'base'
+const password = 1
+const port = 5432
+
+const sequelize = new Sequelize(database, user, password, {
+    host,
+    port,
+    dialect: 'postgres',
+    logging: false
+  })
 
 const Categories = sequelize.define('categories', {
     name: {

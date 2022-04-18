@@ -1,8 +1,12 @@
-const { Sequelize, DataTypes } = require('sequelize')
 
-const sequelize = new Sequelize('postgres://postgres:1@localhost:5432/base')
+// const sequelize = new Sequelize('postgres://postgres:1@localhost:5432/base')
 
-module.exports = {
-    sequelize,
-    DataTypes
-}
+
+
+
+
+
+// module.exports = {
+//     sequelize,
+//     DataTypes
+// }
