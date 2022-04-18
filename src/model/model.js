@@ -1,17 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
-const user = 'gxvcqikc'
-const host = '	rajje.db.elephantsql.com (rajje-01)'
-const database = 'gxvcqikc'
-const password = 'aPzRK6bOFfc8S2w1xQ5htGZTs5nvu4Sa'
-const port = 5432
-
-const sequelize = new Sequelize(database, user, password, {
-    host,
-    port,
-    dialect: 'postgres',
-    logging: false
-  })
+const sequelize = new Sequelize('postgres://gxvcqikc:aPzRK6bOFfc8S2w1xQ5htGZTs5nvu4Sa@rajje.db.elephantsql.com/gxvcqikc')
 
 const Categories = sequelize.define('categories', {
     name: {
