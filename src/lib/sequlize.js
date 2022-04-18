@@ -1,13 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
-const sequelize = new Sequelize(
-    process.env.DATABASE,
-    process.env.DATABASE_USER,
-    process.env.DATABASE_PASSWORD,
-    {
-      dialect: 'postgres',
-    },
-  );    
+const sequelize = new Sequelize('postgres://gxvcqikc:aPzRK6bOFfc8S2w1xQ5htGZTs5nvu4Sa@rajje.db.elephantsql.com/gxvcqikc')
 
 module.exports = {
     sequelize,

@@ -7,8 +7,8 @@ const { sequelize } = require('./lib/sequlize')
 const modules = require('./modules');
 
 sequelize.sync({ force: false })
-.then(() => console.log('connected'))
-.catch(e => console.log(e.message))
+.then(() => console.log("connected"))
+.catch(err => console.log(err))
 
 const server = new ApolloServer({
     modules,
